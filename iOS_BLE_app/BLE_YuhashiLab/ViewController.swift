@@ -152,6 +152,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             print("ビーコンの位置測定")
             for beacon in beacons {
                 //ここにFIWAREに送信する部分を書く
+                HTTP.get("http://192.168.10.15:80"){r in
+                    print(r.stringValue)
+                }
                 print("fixedId:\(fixedId)") //fixedIdは最初に入力してもらう識別番号（それぞれの持つタグのminor値）
                 print("uuid:\(beacon.uuid)")
                 print("major:\(beacon.major)")
