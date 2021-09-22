@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0C5B8526FB5F52000B11F6 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8426FB5F52000B11F6 /* Amplify */; };
+		4B0C5B8726FB5F52000B11F6 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8626FB5F52000B11F6 /* AWSAPIPlugin */; };
+		4B0C5B8926FB5F52000B11F6 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8826FB5F52000B11F6 /* AWSCognitoAuthPlugin */; };
 		FE35B87E26CF7E9A009329CD /* EzHTTP in Frameworks */ = {isa = PBXBuildFile; productRef = FE35B87D26CF7E9A009329CD /* EzHTTP */; };
 		FEC47B0525AC6CEB00039EF7 /* unnamed (3).jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEC47B0425AC6CEB00039EF7 /* unnamed (3).jpg */; };
 		FEE785A8257F60BE00508FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE785A7257F60BE00508FE4 /* AppDelegate.swift */; };
@@ -32,7 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0C5B8726FB5F52000B11F6 /* AWSAPIPlugin in Frameworks */,
 				FE35B87E26CF7E9A009329CD /* EzHTTP in Frameworks */,
+				4B0C5B8526FB5F52000B11F6 /* Amplify in Frameworks */,
+				4B0C5B8926FB5F52000B11F6 /* AWSCognitoAuthPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +93,9 @@
 			name = BLE_YuhashiLab;
 			packageProductDependencies = (
 				FE35B87D26CF7E9A009329CD /* EzHTTP */,
+				4B0C5B8426FB5F52000B11F6 /* Amplify */,
+				4B0C5B8626FB5F52000B11F6 /* AWSAPIPlugin */,
+				4B0C5B8826FB5F52000B11F6 /* AWSCognitoAuthPlugin */,
 			);
 			productName = BLE_YuhashiLab;
 			productReference = FEE785A4257F60BE00508FE4 /* BLE_YuhashiLab.app */;
@@ -117,6 +126,7 @@
 			mainGroup = FEE7859B257F60BE00508FE4;
 			packageReferences = (
 				FE35B87C26CF7E99009329CD /* XCRemoteSwiftPackageReference "EzHTTP" */,
+				4B0C5B8326FB5F52000B11F6 /* XCRemoteSwiftPackageReference "amplify-ios" */,
 			);
 			productRefGroup = FEE785A5257F60BE00508FE4 /* Products */;
 			projectDirPath = "";
@@ -343,6 +353,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4B0C5B8326FB5F52000B11F6 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.4;
+			};
+		};
 		FE35B87C26CF7E99009329CD /* XCRemoteSwiftPackageReference "EzHTTP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/asaday/EzHTTP.git";
@@ -354,6 +372,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4B0C5B8426FB5F52000B11F6 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B0C5B8326FB5F52000B11F6 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+		4B0C5B8626FB5F52000B11F6 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B0C5B8326FB5F52000B11F6 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		4B0C5B8826FB5F52000B11F6 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B0C5B8326FB5F52000B11F6 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
 		FE35B87D26CF7E9A009329CD /* EzHTTP */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FE35B87C26CF7E99009329CD /* XCRemoteSwiftPackageReference "EzHTTP" */;
