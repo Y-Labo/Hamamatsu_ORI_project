@@ -3,9 +3,13 @@
 //  BLE_YuhashiLab
 //
 //  Created by 和田颯太郎 on 2020/12/08.
+//  changed by takagi 2021/09/23
 //
 
 import UIKit
+import Amplify
+import AWSAPIPlugin
+import AWSCognitoAuthPlugin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //amplify inisialized
+        do {
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSAPIPlugin())
+            try Amplify.configure()
+            print("Amplify configured with API and Auth plugin")
+        } catch {
+            print("Failed to initialize Amplify with \(error)")
+        }
         return true
     }
 

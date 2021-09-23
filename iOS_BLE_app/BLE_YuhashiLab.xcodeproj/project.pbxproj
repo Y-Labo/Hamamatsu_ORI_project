@@ -10,6 +10,7 @@
 		4B0C5B8526FB5F52000B11F6 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8426FB5F52000B11F6 /* Amplify */; };
 		4B0C5B8726FB5F52000B11F6 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8626FB5F52000B11F6 /* AWSAPIPlugin */; };
 		4B0C5B8926FB5F52000B11F6 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8826FB5F52000B11F6 /* AWSCognitoAuthPlugin */; };
+		4B0C5B8D26FBAAF0000B11F6 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B0C5B8C26FBAAF0000B11F6 /* amplifyconfiguration.json */; };
 		FE35B87E26CF7E9A009329CD /* EzHTTP in Frameworks */ = {isa = PBXBuildFile; productRef = FE35B87D26CF7E9A009329CD /* EzHTTP */; };
 		FEC47B0525AC6CEB00039EF7 /* unnamed (3).jpg in Resources */ = {isa = PBXBuildFile; fileRef = FEC47B0425AC6CEB00039EF7 /* unnamed (3).jpg */; };
 		FEE785A8257F60BE00508FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE785A7257F60BE00508FE4 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B0C5B8C26FBAAF0000B11F6 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = "../../../../Downloads/shizuoka-university-ios-sample-app-main/amplifyconfiguration.json"; sourceTree = "<group>"; };
 		FEC47B0425AC6CEB00039EF7 /* unnamed (3).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "unnamed (3).jpg"; sourceTree = "<group>"; };
 		FEE785A4257F60BE00508FE4 /* BLE_YuhashiLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_YuhashiLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE785A7257F60BE00508FE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				FEE785A9257F60BE00508FE4 /* SceneDelegate.swift */,
 				FEE785AB257F60BE00508FE4 /* ViewController.swift */,
 				FEE785AD257F60BE00508FE4 /* Main.storyboard */,
+				4B0C5B8C26FBAAF0000B11F6 /* amplifyconfiguration.json */,
 				FEE785B0257F60C200508FE4 /* Assets.xcassets */,
 				FEE785B5257F60C200508FE4 /* Info.plist */,
 			);
@@ -145,6 +148,7 @@
 				FEE785B1257F60C200508FE4 /* Assets.xcassets in Resources */,
 				FEC47B0525AC6CEB00039EF7 /* unnamed (3).jpg in Resources */,
 				FEE785AF257F60BE00508FE4 /* Main.storyboard in Resources */,
+				4B0C5B8D26FBAAF0000B11F6 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
