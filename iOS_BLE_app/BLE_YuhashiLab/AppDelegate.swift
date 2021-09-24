@@ -12,6 +12,7 @@ import AWSAPIPlugin
 import AWSCognitoAuthPlugin
 
 @main
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
@@ -27,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch {
             print("Failed to initialize Amplify with \(error)")
         }
+        
+        ApiClient.signInIfNot(username: "takagi.yohei.16@shizuoka.ac.jp", password: "mysweet32")
         return true
     }
 
