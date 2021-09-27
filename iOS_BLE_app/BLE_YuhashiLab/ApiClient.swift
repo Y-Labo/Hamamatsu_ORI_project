@@ -46,7 +46,7 @@ open class ApiClient: NSObject {
         
         let body: EntityData = EntityData(
             type: ApiClient.typeName,
-            id: "urn:ngsi-ld:\(UUID().uuidString)",
+            id: "urn:ngsi-ld:\(typeName):\(UUID().uuidString)",
             datetime: EntityData.DatetimeAttribute(value: time),
             minorBeaconId: EntityData.StringAttribute(value: minorBeaconId),
             majorBeaconId: EntityData.StringAttribute(value: majorBeaconId),
