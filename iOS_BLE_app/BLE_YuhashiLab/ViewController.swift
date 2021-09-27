@@ -155,9 +155,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 //                HTTP.get("http://192.168.10.15:80"){r in
 //                    print(r.stringValue)
 //                }
-                if(fixedId == ""){
-                    print("<no id>")
-                }else{
+//                if(fixedId == ""){
+//                    print("emptyid")
+//                }else{
                 do{
                 try ApiClient.postData(deviceId: fixedId, time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi))
                     print("request success?")
@@ -165,7 +165,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                            print("got error: \(error)")
             }
                     
-                }
+//                }
                 print("fixedId:\(fixedId)") //fixedIdは最初に入力してもらう識別番号（それぞれの持つタグのminor値）
                 print("uuid:\(beacon.uuid)")
                 print("major:\(beacon.major)")
