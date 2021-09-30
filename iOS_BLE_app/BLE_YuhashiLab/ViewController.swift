@@ -153,27 +153,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             Log.write("\(beacons)\n")
             for beacon in beacons {
                 //ここにFIWAREに送信する部分を書く
-//                HTTP.get("http://192.168.10.15:80"){r in
-//                    print(r.stringValue)
-//                }
 //                if(fixedId == ""){
 //                    print("emptyid")
 //                }else{
 //                // /////////////
-//                do{
-//                try ApiClient.postData(deviceId: fixedId, time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi))
-//                    print("request success?")
-////                    /////////batch
-//                    try ApiClient.postDataBatch(deviceId: fixedId, data: [
-//                                        BatchEntity(time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi)),
-//                                        BatchEntity(time: Date(), minorBeaconId: "001", majorBeaconId: "002", rssi: 0.112),
-//                                    ])
-//                    // /////////////
-//            } catch {
-//                           print("got error: \(error)")
-//            }
-                    // ////////////
-//                }
+            do{
+                try ApiClient.postData(deviceId: fixedId, time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi))
+                    print("request success?")
+
+            } catch {
+                           print("got error: \(error)")
+            }
                 print("fixedId:\(fixedId)") //fixedIdは最初に入力してもらう識別番号（それぞれの持つタグのminor値）
                 print("uuid:\(beacon.uuid)")
                 print("major:\(beacon.major)")
@@ -194,6 +184,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 print("rssi:\(beacon.rssi)")
                 print("timestamp:\(beacon.timestamp)")
             }
+            /// bind request
+            //
+            //                    try ApiClient.postDataBatch(deviceId: fixedId, data: [
+            //                                        BatchEntity(time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi)),
+            //                                        BatchEntity(time: Date(), minorBeaconId: "001", majorBeaconId: "002", rssi: 0.112),
+            //                                    ])
         }
 }
     
