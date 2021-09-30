@@ -150,7 +150,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     // ビーコンの位置測定
         func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion){
             print("ビーコンの位置測定")
-            //Log.write("\(beacons)\n")
+            Log.write("\(beacons)\n")
             for beacon in beacons {
                 //ここにFIWAREに送信する部分を書く
 //                HTTP.get("http://192.168.10.15:80"){r in
@@ -160,18 +160,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 //                    print("emptyid")
 //                }else{
 //                // /////////////
-                do{
-                try ApiClient.postData(deviceId: fixedId, time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi))
-                    print("request success?")
-//                    /////////batch
+//                do{
+//                try ApiClient.postData(deviceId: fixedId, time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi))
+//                    print("request success?")
+////                    /////////batch
 //                    try ApiClient.postDataBatch(deviceId: fixedId, data: [
 //                                        BatchEntity(time: beacon.timestamp, minorBeaconId: String(describing: beacon.minor), majorBeaconId: String(describing: beacon.major), rssi: Double(beacon.rssi)),
 //                                        BatchEntity(time: Date(), minorBeaconId: "001", majorBeaconId: "002", rssi: 0.112),
 //                                    ])
 //                    // /////////////
-            } catch {
-                           print("got error: \(error)")
-            }
+//            } catch {
+//                           print("got error: \(error)")
+//            }
                     // ////////////
 //                }
                 print("fixedId:\(fixedId)") //fixedIdは最初に入力してもらう識別番号（それぞれの持つタグのminor値）

@@ -3,7 +3,7 @@
 import Foundation
 
 class Log {
-    private static let file = "log.csv"
+    private static let file = "bleLog.csv"
 
     static func write(_ log: String) {
         writeToFile(file: file, text: log)
