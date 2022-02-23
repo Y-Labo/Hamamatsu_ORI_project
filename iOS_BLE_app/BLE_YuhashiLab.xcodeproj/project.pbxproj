@@ -11,6 +11,7 @@
 		4B0C5B8726FB5F52000B11F6 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8626FB5F52000B11F6 /* AWSAPIPlugin */; };
 		4B0C5B8926FB5F52000B11F6 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 4B0C5B8826FB5F52000B11F6 /* AWSCognitoAuthPlugin */; };
 		4B3FA9A22705D81B00CC64D9 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3FA9A12705D81B00CC64D9 /* Log.swift */; };
+		4B9DDA4827C4DA040020D3F0 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DDA4727C4DA040020D3F0 /* NextViewController.swift */; };
 		4BBBE62E26FDC7CF00AF5EDE /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBE62D26FDC7CF00AF5EDE /* amplifyconfiguration.json */; };
 		4BBBE63026FDCA8A00AF5EDE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE62F26FDCA8A00AF5EDE /* ApiClient.swift */; };
 		FE35B87E26CF7E9A009329CD /* EzHTTP in Frameworks */ = {isa = PBXBuildFile; productRef = FE35B87D26CF7E9A009329CD /* EzHTTP */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		4B3FA9A12705D81B00CC64D9 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		4B9DDA4727C4DA040020D3F0 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		4BBBE62D26FDC7CF00AF5EDE /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = amplifyconfiguration.json; path = "../../../../Downloads/shizuoka-university-ios-sample-app-main/amplifyconfiguration.json"; sourceTree = "<group>"; };
 		4BBBE62F26FDCA8A00AF5EDE /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiClient.swift; path = "../../../shizuoka-university-ios-sample-app/AmplifyAuthSample/ApiClient.swift"; sourceTree = "<group>"; };
 		FEC47B0425AC6CEB00039EF7 /* unnamed (3).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "unnamed (3).jpg"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				FEE785AD257F60BE00508FE4 /* Main.storyboard */,
 				FEE785B0257F60C200508FE4 /* Assets.xcassets */,
 				FEE785B5257F60C200508FE4 /* Info.plist */,
+				4B9DDA4727C4DA040020D3F0 /* NextViewController.swift */,
 			);
 			path = BLE_YuhashiLab;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE785AC257F60BE00508FE4 /* ViewController.swift in Sources */,
+				4B9DDA4827C4DA040020D3F0 /* NextViewController.swift in Sources */,
 				FEE785A8257F60BE00508FE4 /* AppDelegate.swift in Sources */,
 				4B3FA9A22705D81B00CC64D9 /* Log.swift in Sources */,
 				FEE785AA257F60BE00508FE4 /* SceneDelegate.swift in Sources */,
@@ -238,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -293,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -309,14 +313,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DUQZ86Z423;
+				DEVELOPMENT_TEAM = 7SNM76CAM2;
 				INFOPLIST_FILE = BLE_YuhashiLab/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SotaroWada.BLE-YuhashiLab.yoheiro";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = yoheiro.ylab.BLE.v1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,14 +334,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DUQZ86Z423;
+				DEVELOPMENT_TEAM = 7SNM76CAM2;
 				INFOPLIST_FILE = BLE_YuhashiLab/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SotaroWada.BLE-YuhashiLab.yoheiro";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = yoheiro.ylab.BLE.v1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
